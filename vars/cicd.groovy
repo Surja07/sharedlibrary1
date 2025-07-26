@@ -1,4 +1,5 @@
-def gitdownload(repo)
+
+def gitdownload(String repo) 
 {
-    https://github.com/Surja07/Maven1.git ${repo}.git
+    git branch: 'main', url: "https://github.com/Surja07/Maven1/${repo}.git"
 }
