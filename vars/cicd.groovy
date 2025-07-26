@@ -8,7 +8,7 @@ def build() {
     sh 'mvn clean package'
 }
 
-def deployment to slave1(jobname, ip) 
-{
+def deploymentToSlave1(jobname, ip) {
     sh "scp /var/lib/jenkins/workspace/${jobname}/HelloWorld.java ubuntu@${ip}:/var/lib/tomcat10/webapps/"
 }
+
